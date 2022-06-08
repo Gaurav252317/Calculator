@@ -1,94 +1,168 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Calculator</title>
-    <link rel="stylesheet" href="calculator.css">
-</head>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
 
-<body>
+  <body>
     <div id="calcbody">
-        <div id="heading">
-            CALCULATOR
-        </div>
-        <div id="show">
-            <span id="showvalue"></span>
-        </div>
-        <div id="bodyofcalc">
-            <table id="calctable">
-                <tr>
-                    <td>
-                        <button id="clear" class="designtable">AC</button>
-                    </td>
-                    <td>
-                        <button id="sqrt" class="designtable">sqrt</button>
-                    </td>
-                    <td>
-                        <button id="percentage" class="designtable">%</button>
-                    </td>
-                    <td>
-                        <button id="symbol" class="designtable">/</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button id="number7" class="designtable">7</button>
-                    </td>
-                    <td>
-                        <button id="number8" class="designtable">8</button>
-                    </td>
-                    <td>
-                        <button id="number9" class="designtable">9</button>
-                    </td>
-                    <td>
-                        <button id="symbol" class="designtable">*</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button id="number4" class="designtable">4</button>
-                    </td>
-                    <td>
-                        <button id="number5" class="designtable">5</button>
-                    </td>
-                    <td>
-                        <button id="number6" class="designtable">6</button>
-                    </td>
-                    <td>
-                        <button id="symbol" class="designtable">-</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button id="number1" class="designtable">1</button>
-                    </td>
-                    <td>
-                        <button id="number2" class="designtable">2</button>
-                    </td>
-                    <td>
-                        <button id="number3" class="designtable">3</button>
-                    </td>
-                    <td>
-                        <button id="symbol" class="designtable">+</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button id="number0" class="design0">0</button>
-                    </td>
-                    <td>
-                        <button id="numberdot" class="designtable">.</button>
-                    </td>
-                    <td>
-                        <button id="equal" class="designtable">=</button>
-                    </td>
-
-                </tr>
-            </table>
-        </div>
+      <div id="heading">CALCULATOR</div>
+      <div id="show">
+        <span id="showvalue"></span>
+      </div>
+      <div id="bodyofcalc">
+        <table id="calctable">
+          <tr>
+            <td>
+              <button id="clear" class="designtable">AC</button>
+            </td>
+            <td>
+              <button id="sqrt" class="designtable">sqrt</button>
+            </td>
+            <td>
+              <button id="percentage" class="designtable">%</button>
+            </td>
+            <td>
+              <button
+                id="symbol"
+                onclick="onSymbolTap(this)"
+                class="designtable"
+              >
+                /
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                id="number"
+                onclick="onNumberTap(this)"
+                class="designtable"
+              >
+                7
+              </button>
+            </td>
+            <td>
+              <button
+                id="number"
+                onclick="onNumberTap(this)"
+                class="designtable"
+              >
+                8
+              </button>
+            </td>
+            <td>
+              <button
+                id="number"
+                onclick="onNumberTap(this)"
+                class="designtable"
+              >
+                9
+              </button>
+            </td>
+            <td>
+              <button
+                id="symbol"
+                onclick="onNumberTap(this)"
+                class="designtable"
+              >
+                *
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                id="number"
+                onclick="onNumberTap(this)"
+                class="designtable"
+              >
+                4
+              </button>
+            </td>
+            <td>
+              <button
+                id="number"
+                onclick="onNumberTap(this)"
+                class="designtable"
+              >
+                5
+              </button>
+            </td>
+            <td>
+              <button
+                id="number"
+                onclick="onNumberTap(this)"
+                class="designtable"
+              >
+                6
+              </button>
+            </td>
+            <td>
+              <button
+                id="symbol"
+                onclick="onNumberTap(this)"
+                class="designtable"
+              >
+                -
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                id="number"
+                onclick="onNumberTap(this)"
+                class="designtable"
+              >
+                1
+              </button>
+            </td>
+            <td>
+              <button
+                id="number"
+                onclick="onNumberTap(this)"
+                class="designtable"
+              >
+                2
+              </button>
+            </td>
+            <td>
+              <button
+                id="number"
+                onclick="onNumberTap(this)"
+                class="designtable"
+              >
+                3
+              </button>
+            </td>
+            <td>
+              <button
+                id="symbol"
+                onclick="onNumberTap(this)"
+                class="designtable"
+              >
+                +
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button id="number" onclick="onNumberTap(this)" class="design0">
+                0
+              </button>
+            </td>
+            <td>
+              <button id="numberdot" class="designtable">.</button>
+            </td>
+            <td>
+              <button id="equal" class="designtable">=</button>
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
     <script src="calculator1.js"></script>
-
-</body>
-
+  </body>
 </html>
